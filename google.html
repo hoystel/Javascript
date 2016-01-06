@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+//var str = "Apple, Banana, Kiwi";
+//var object = {name:"luke", age:26, eyes:"blue"};
+//document.write("The person is called " + object.name + " he has " + object.eyes + " eyes and is " + object.age + ".");
+
+
+//var array = ["Zenon","BMW","Ferrari","Lambourghini","vxr","Alpha"];
+//var sorted = array.sort();
+
+//for (x = 0; x < sorted.length; x++)
+	//{
+	//	document.write(sorted[x] + "<br>");	
+	//};
+	
+	
+	
+var numbers = [1,2,3,4,5,6,7,9,10];
+var txt = "";
+
+for (x = 0; x < numbers.length; x++){
+	if (numbers[x] - numbers[x-1] != 1)
+		{
+			var missing = x+1;			
+		}
+	else{
+		txt += numbers[x] + ",";
+	}
+};
+	
+
+alert(missing);
+document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html>
+
+

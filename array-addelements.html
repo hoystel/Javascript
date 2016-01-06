@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The push method appends a new element to an array.</p>
+
+<button onclick="addFunction()">Add item</button>
+<button onclick="removeFunction()">Remove item</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[0] = "Kiwi"; //to change an element use it position and just re define it.
+delete fruits[0]; //same to del specific item
+document.getElementById("demo").innerHTML = fruits;
+
+function addFunction() {
+    fruits.push("Lemon");
+    document.getElementById("demo").innerHTML = fruits;
+}
+
+function removeFunction() {
+    fruits.pop();//just removes last element 
+    document.getElementById("demo").innerHTML = fruits;
+}
+
+//push adds and pop deletes 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="p1">Please locate where 'locate' occurs occurs!.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+var oldStr = document.getElementById("p1").innerHTML;
+
+for(x = 0; x < oldStr.length; x++){
+	var newStr += oldStr.search("occurs");
+	document.getElementById("demo").innerHTML += "<br> The position is actually number :" + newStr;
+}
+
+}
+</script>
+
+</body>
+</html>
+

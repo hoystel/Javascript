@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var text = "";
+var i;//not always req
+
+for (i = 0; i < cars.length; i++) {
+    text += cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<!-- 
+for - loops through a block of code a number of times.
+for (statement 1; statement 2; statement 3) {}
+
+Statement 1 is executed before the loop (the code block) starts.
+Statement 2 defines the condition for running the loop (the code block). - has to be true for loop to contnue - else it will exit
+Statement 3 is executed each time after the loop (the code block) has been executed.
+
+event without statement 1 & 3 still need ";"
+
+
+
+for/in - loops through the properties of an object
+while - loops through a block of code while a specified condition is true
+do/while - also loops through a block of code while a specified condition is true
+-->
+
+</body>
+</html>
